@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #5722CD;
+    --primary-color-light: #4845E4;
+    --standard-tekst-color: #0c0c0c;
+    --flying-color: #F2F0FF;
+    --project-color: #7A7A7A;
+    --button-color: #ED4385;
+}
+
+
+body {
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header CSS styles */
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: var(--primary-color);*/
+    background: linear-gradient(32deg, var(--primary-color) 0% , var(--primary-color-light) 100% ) ;
+    height:500px;
+}
+
+
+.navbar > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px;
+}
+.navbar li {
+    list-style: none;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar a:link, a:visited {
+    color: white;
+}
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+.cta-btn {
+    background-color: var(--button-color);
+}
+.skewed {
+    position: relative;
+    bottom: -200px;
+    height: 100px;
+    width: 130%;
+    color: var(--standard-tekst-color);
+    background-color: white;
+    transform: rotate(3deg);
+}
+
+.swirl {
+    margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+h3 {
+
+}
+}
+
+
+
