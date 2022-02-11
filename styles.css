@@ -18,37 +18,41 @@
 
 body {
     width: 100%;
-    color: white;
+    color: var(--flying-color);
     font-family: 'Roboto', sans-serif;
+    height: 1500px;
 }
 
-/* Header CSS styles */
+
+.page {
+    font-style: italic;
+    color: var(--standard-tekst-color);
+}
+
 
 .outer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*background-color: var(--primary-color);*/
-    background: linear-gradient(32deg, var(--primary-color) 0% , var(--primary-color-light) 100% ) ;
-    height:500px;
+    /*background: var(--primary-color);*/
+    background: linear-gradient(60deg, var(--primary-color) 0%, var(--primary-color-light) 100%);
+    gap: 10px;
+    height: 800px;
 }
 
-
 .navbar > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     gap: 60px;
     margin: 20px;
 }
+
 .navbar li {
     list-style: none;
 }
-.navbar a {
+
+a {
     text-decoration: none;
 }
-.navbar a:link, a:visited {
-    color: white;
+
+.navbar a:link,
+.navbar a:visited {
+    color: var(--flying-color);
 }
 
 
@@ -58,34 +62,247 @@ body {
     gap: 40px;
     align-items: center;
     justify-content: center;
+    text-align: center;
+
 }
 
-h1, h2 {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-}
 .cta-btn {
     background-color: var(--button-color);
+    color: var(--flying-color);
+    margin: 50px;
+    padding: 10px;
+    /*position: relative;*/
+    border-radius: 20px;
+    border-color: var(--button-color);
+    box-shadow: 5px 5px var(--primary-color);
 }
+
 .skewed {
     position: relative;
-    bottom: -200px;
-    height: 100px;
-    width: 130%;
+    bottom: -50px;
+    height: 250px;
+    width: 110%;
+    background-color: var(--flying-color);
     color: var(--standard-tekst-color);
-    background-color: white;
     transform: rotate(3deg);
 }
 
 .swirl {
+    margin: 20px;
+}
+
+main {
+    color: var(--standard-tekst-color);
+    background-color: var(--flying-color);
+    margin: 50px;
+    text-align: left;
+    /*gap: 60px;*/
+}
+
+
+.intro {
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    color: var(--primary-color);
+    font-family: 'Merriweather', serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+#intro {
+    text-align: center;
+
+}
+
+
+
+
+#contactline {
+    color: var(--standard-tekst-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: normal;
+}
+
+#contactline > a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+::placeholder {
+    text-align: left;
+}
+
+input {
+    height: 40px;
+    width: 350px;
+
+}
+
+
+
+#case-studies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+
+#case-studies img {
+    margin: 20px;
+    width: 100%;
+}
+
+#case-studies p {
+    color: var(--standard-tekst-color)
+}
+
+#case-studies p + div {
+    color: var(--primary-color)
+}
+
+#case-studies h2 + img {
+    margin-top: 10px;
+    width: 50px;
+}
+
+#case-studies a:link, a:visited {
+    color: var(--primary-color);
+}
+/* reusable */
+.columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px;
+    padding: 20px;
+    color: var(--primary-color);
+
+}
+
+#service div {
+    border-style: solid;
+    padding: 10px;
+}
+
+#service p {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 220px;
+    color: var(--project-color);
+    font-size: smaller;
+
+}
+
+#service img {
+    margin-top: 20px;
+    width: 100px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    /*justify-content: space-between;*/
+    /*background-color: bisque;*/
+}
+/* Header CSS styles */
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
     margin: 10px;
 }
 
 @media screen and (min-width: 768px) {
-h3 {
+
+    #case-studies img {
+        width: 50%;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    /* per service item wrap within service item */
+    #service div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        /*flex-wrap: wrap;*/
+        width: 270px;
+        height: 400px;
+
+    }
+
+    #service img {
+        width: 100px;
+    }
+    /* per service section wrap row */
+    #service {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
 }
-}
-
-
-
