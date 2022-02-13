@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #5722CD;
+    --primary-color-light: #4845E4;
+    --standard-tekst-color: #0c0c0c;
+    --flying-color: #F2F0FF;
+    --project-color: #F3F6F9;
+    --services-color: #7A7A7A;
+    --button-color: #ED4385;
+    --body-color: #FFFFFF;
+}
+
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--project-color);
+}
+
+
+.pagina {
+    font-style: italic;
+    color: var(--standard-tekst-color);
+}
+
+
+.outer-container-top {
+    background: var(--primary-color);
+    background: linear-gradient(60deg, var(--primary-color-light) 0%, var(--primary-color) 100%);
+    gap: 30px;
+    height: 550px;
+    color: var(--flying-color);
+    z-index: -1;
+}
+
+.outer-container-bottom {
+    background: var(--primary-color);
+    background: linear-gradient(60deg, var(--primary-color-light) 0%, var(--primary-color) 100%);
+    gap: 30px;
+    height: 900px;
+    color: var(--flying-color);
+    z-index: -1;
+}
+
+.navbar > ul {
+    gap: 60px;
+    padding: 30px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: var(--flying-color);
+}
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hero-section p {
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.cta-btn {
+    background-color: var(--button-color);
+    color: var(--flying-color);
+    margin: 20px;
+    border-radius: 30px;
+    border-color: var(--button-color);
+    box-shadow: 5px 5px var(--primary-color);
+}
+
+.skewed {
+    position: relative;
+    width: 110%;
+    background-color: var(--body-color);
+    transform: rotate(3deg);
+}
+
+.skewed-top {
+    bottom: 45px;
+    left: -20px;
+    height: 500px
+}
+
+/* Verschuif omhoog via bottom */
+.moveupservice {
+    position: relative;
+    bottom: -100px;
+    left: -20px;
+    height: 1000px;
+    z-index: 0;
+}
+
+.moveupcontactpage {
+    bottom: 650px;
+    height: 200px;
+    left: -20px;
+    z-index: 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    margin: 50px;
+    padding: 20px;
+    color: var(--primary-color);
+    font-family: 'Merriweather', serif;
+    font-size: large;
+    font-weight: bold;
+    z-index: 1;
+}
+
+main {
+    /*z-index: -1;*/
+    color: var(--standard-tekst-color);
+    position: relative;
+    top: 100px;
+    padding-top: 100px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+}
+
+
+#contactline {
+    color: var(--standard-tekst-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+}
+
+#contact-line > a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#contact-page {
+    position: relative;
+    bottom: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger;
+    font-weight: normal;
+    padding-top: 200px;
+}
+
+#contact-page p {
+    font-size: medium;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+::placeholder {
+    text-align: left;
+}
+
+input, textarea {
+    height: 50px;
+    width: 400px;
+    padding: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: lighter;
+}
+
+textarea {
+    height: 200px;
+}
+
+#copywrite {
+    background-color: var(--standard-tekst-color);
+    color: var(--body-color);
+    text-align: center;
+    font-size: small;
+    padding: 20px;
+    position: relative;
+    bottom: 600px;
+}
+
+button {
+    min-width: 180px;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+#case-studies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: var(--project-color);
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 30px;
+    gap: 10px;
+    max-width: 400px;
+}
+
+#case-studies img {
+    margin: 50px;
+    width: 80%;
+    box-shadow: 20px 20px 50px 15px var(--services-color);
+}
+
+#case-studies p {
+    color: var(--standard-tekst-color);
+    font-size: larger;
+    margin-bottom: 30px;
+
+
+}
+
+
+#case-studies h2 + img {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 50px;
+    box-shadow: none;
+}
+
+#case-studies p + div {
+    color: var(--primary-color);
+    font-size: small;
+    font-weight: bold;
+}
+
+#case-studies a:link, a:visited {
+    color: var(--primary-color);
+
+}
+
+/* verschuif service omhoog via bottom */
+#service {
+    position: relative;
+    bottom: 700px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    padding-bottom: 100px;
+    color: var(--primary-color);
+    background-color: var(--body-color);
+}
+
+#service div {
+    border-style: solid;
+    padding: 10px;
+}
+
+#service p {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 220px;
+    color: var(--services-color);
+    font-size: smaller;
+
+}
+
+#service img {
+    margin-top: 20px;
+    width: 100px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    /*background-color: bisque;*/
+}
+
+/* Header CSS styles */
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    margin: 35px;
+}
+
+footer {
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+
+    .navbar > ul {
+        justify-content: right;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #case-studies img {
+        width: 50%;
+        max-width: 45%;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    /* per service item wrap within service item */
+    #service div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 270px;
+        height: 400px;
+    }
+
+    #service img {
+        width: 100px;
+    }
+
+    /* per service section wrap row */
+    #service {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    input, textarea {
+        width: 700px;
+
+    }
+
+    input {
+        height: 56px;
+
+    }
+}
